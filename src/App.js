@@ -133,7 +133,6 @@ function App() {
                   </Box>
                 </Box>
 
-                
                 <Box>
                 <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.mehulrastogi.com/blog/dogemining/&title=Doge%20Mining&summary=Mining%20serves%20two%20purposes%3A%20To%20create%20new%20coins%20and%20to%20maintain%20a%20log%20of%20all%20transactions%20of%20existing%20digital%20tokens.%20%0AHere,%20I%20have%20demystified%20the%20process%20of%20Dogecoin%20mining.&source=" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
                 </Box> 
@@ -176,7 +175,7 @@ function App() {
                   </Box>
                 </Box>
                 <Box>
-                  <ShareIcon />
+                <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mehulrastogi.com/blog/educationtoday/" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
                 </Box>
               </CardActions>
             </Card>
