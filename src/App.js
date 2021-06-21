@@ -15,6 +15,10 @@ import Avatar from '@material-ui/core/Avatar';
 import Pagination from '@material-ui/lab/Pagination';
 import Link from '@material-ui/core/Link'
 import ShareIcon from '@material-ui/icons/Share';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -74,6 +78,10 @@ const useStyles = makeStyles((theme) => ({
   nav: {
     color: '#000',
     fontSize: '1.5rem',
+  },
+
+  spacing: {
+    marginRight: "10px"
   }
 }));
 
@@ -144,6 +152,47 @@ function App() {
 
           <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
+            <Link href="" style={{ textDecoration: 'none' }}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="./l.png"
+                  title="Demystifying the Linkedin Algorithm"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    The Linkedin Algorithm 🔐
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                  
+                  Here, I dive deep into Linkedin's post circulation Algorithm. I talk about my personal experiences
+                  and some approaches that have worked well for me.
+                  <br /> Coming soon ⏰ 
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              </Link>
+              <CardActions className={classes.cardActions}>
+                <Box className={classes.author}>
+                  <Avatar src="./mehul.jpeg" />
+                  <Box ml={2}>
+                    <Typography variant="subtitle2" component="p">
+                      Mehul Rastogi
+                    </Typography>
+                    <Typography variant="subtitle2" color="textSecondary" component="p">
+                      Coming Soon 
+                    </Typography>
+                  </Box>
+                </Box>
+                <Box>
+                <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mehulrastogi.com/blog/educationtoday/" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
+                </Box>
+              </CardActions>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card className={classes.card}>
             <Link href="https://www.mehulrastogi.com/blog/educationtoday/" style={{ textDecoration: 'none' }}>
               <CardActionArea>
                 <CardMedia
@@ -180,14 +229,39 @@ function App() {
               </CardActions>
             </Card>
           </Grid>
+
           </Grid>
+
         <Box my={4} className={classes.paginationContainer}>
           <Pagination count={1} color="primary"/>
         </Box>
+        <Box my={4}>
+        <Link href="https://www.linkedin.com/in/mehul-rastogi-2002/" target ="_blank" style={{ textDecoration: 'none' }}>
+          <LinkedInIcon color="primary" className={classes.spacing} />
+          </Link>
+
+          <Link href="https://twitter.com/mehulrastogi20" target ="_blank" style={{ textDecoration: 'none' }}>
+          <TwitterIcon color="primary" className={classes.spacing} />
+          </Link>
+
+          <Link href="https://www.facebook.com/mehul.rastogi.54" target ="_blank" style={{ textDecoration: 'none' }}>
+          <FacebookIcon color="primary" className={classes.spacing} />
+          </Link>
+
+          <Link href="https://www.instagram.com/mehul_20/"  target ="_blank" style={{ textDecoration: 'none' }}>
+          <InstagramIcon color="primary" className={classes.spacing} />
+          </Link>
+
+
+
+        </Box>
+
       </Container>
     </div>
     
   );
 }
+
+
 
 export default App;
