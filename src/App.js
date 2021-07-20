@@ -152,22 +152,21 @@ function App() {
 
           <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
-            <Link href="" style={{ textDecoration: 'none' }}>
+            <Link href="https://www.mehulrastogi.com/blog/dudeneynumbers/" style={{ textDecoration: 'none' }}>
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image="./l.png"
-                  title="Demystifying the Linkedin Algorithm"
+                  image="./pok.jpg"
+                  title="Dudeney Numbers Demystified"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    The Linkedin Algorithm 🔐
+                    Dudeney Numbers 🔢
                   </Typography>
                   <Typography variant="body2" color="textSecondary" component="p">
                   
-                  Here, I dive deep into Linkedin's post circulation Algorithm. I talk about my personal experiences
-                  and some approaches that have worked well for me.
-                  <br /> Coming soon ⏰ 
+                  In this blog post, I have demystified Dudeney Numbers with the help of a simple Java Algorithm.
+                  <br /> For all the Math and CS nerds, this is a basic yet interesting number that I came across 😉
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -180,16 +179,18 @@ function App() {
                       Mehul Rastogi
                     </Typography>
                     <Typography variant="subtitle2" color="textSecondary" component="p">
-                      Coming Soon 
+                    April 7, 2020
                     </Typography>
                   </Box>
                 </Box>
                 <Box>
-                <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mehulrastogi.com/blog/educationtoday/" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
+                <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mehulrastogi.com/blog/dudeneynumbers/" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
                 </Box>
               </CardActions>
             </Card>
           </Grid>
+
+
 
           <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
