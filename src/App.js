@@ -82,6 +82,13 @@ const useStyles = makeStyles((theme) => ({
 
   spacing: {
     marginRight: "10px"
+  }, 
+
+  likesbutton: {
+    fontSize: "50px"
+  },
+  toolbarButtons: {
+    marginLeft: 'auto',
   }
 }));
 
@@ -96,9 +103,14 @@ function App() {
           <Typography variant="h6" color="primary" className={classes.nav} >
             Mehul Rastogi
           </Typography>
+          
           </Link>
+          <div className={classes.toolbarButtons}>
+          <div class="g-signin2" data-onsuccess="onSignIn"> </div>
+          </div>
         </Toolbar>
       </AppBar>
+
       <Box className={classes.hero}> 
       <Box className={classes.design}>ZEST 🚀  
         </Box>
@@ -144,6 +156,8 @@ function App() {
                 <Box>
                 <Link href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.mehulrastogi.com/blog/dogemining/&title=Doge%20Mining&summary=Mining%20serves%20two%20purposes%3A%20To%20create%20new%20coins%20and%20to%20maintain%20a%20log%20of%20all%20transactions%20of%20existing%20digital%20tokens.%20%0AHere,%20I%20have%20demystified%20the%20process%20of%20Dogecoin%20mining.&source=" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
                 </Box> 
+                  
+                  
               </CardActions>
             </Card>
           </Grid>
