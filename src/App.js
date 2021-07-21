@@ -87,9 +87,6 @@ const useStyles = makeStyles((theme) => ({
   likesbutton: {
     fontSize: "50px"
   },
-  toolbarButtons: {
-    marginLeft: 'auto',
-  }
 }));
 
 function App() {
@@ -106,7 +103,6 @@ function App() {
           
           </Link>
           <div className={classes.toolbarButtons}>
-          <div class="g-signin2" data-onsuccess="onSignIn"> </div>
           </div>
         </Toolbar>
       </AppBar>
