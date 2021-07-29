@@ -115,7 +115,57 @@ function App() {
         <Typography variant="h4" className={classes.blogTitle}>
           BLOGS
         </Typography>
+
+
+
+
+
+
+        
         <Grid container spacing={3}>
+
+        <Grid item xs={12} sm={6} md={4}>
+            <Card className={classes.card}>
+            <Link href="https://www.mehulrastogi.com/blog/personalseo" style={{ textDecoration: 'none' }}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="./personalseo.jpg"
+                  title="SEO for Personal Websites"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    SEO for Personal Websites 💻
+                  </Typography>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                  I have demystified the journey of my website not being ranked by Google to being ranked Third 💪🏻 I have provided a step by step approach to 
+                  implement SEO tactics to rank higher on the Google 📈
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              </Link>
+              <CardActions className={classes.cardActions}>
+                <Box className={classes.author}>
+                  <Avatar src="./mehul.jpeg" />
+                  <Box ml={2}>
+                    <Typography variant="subtitle2" component="p">
+                      Mehul Rastogi
+                    </Typography>
+                    <Typography variant="subtitle2" color="textSecondary" component="p">
+                      July 29, 2021
+                    </Typography>
+                  </Box>
+                </Box>
+                <Box>
+                <Link href="https://twitter.com/intent/tweet?url=https://www.mehulrastogi.com/blog/personalseo/&text=" target="_blank" style={{ textDecoration: 'none' }}>  <ShareIcon /> </Link>
+                </Box>
+              </CardActions>
+            </Card>
+          </Grid>
+
+
+
+
           <Grid item xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <Link href="https://www.mehulrastogi.com/blog/dogemining/" style={{ textDecoration: 'none' }}>
@@ -240,6 +290,9 @@ function App() {
               </CardActions>
             </Card>
           </Grid>
+
+
+          
 
           </Grid>
 
