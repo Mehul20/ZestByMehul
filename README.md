@@ -2,8 +2,6 @@
 
 https://zest.mehulrastogi.com/
 
-![alt text](http://url/to/img.png)
-
 ### `yarn start`
 
 Runs the app in the development mode.\
